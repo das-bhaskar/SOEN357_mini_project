@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usability Testing - Health Companion</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <h2>Health Companion</h2>
+        <a href="index.html">01 Introduction</a>
+        <a href="research.html">02 User Research</a>
+        <a href="personas.html">03 Personas</a>
+        <a href="journey.html">04 Journey Maps</a>
+        <a href="flow.html">05 Logic & Flows</a>
+        <a href="design.html">06 Wireframes</a>
+        <a href="prototype.html">07 Prototype</a>
+        <a href="testing.html" class="active">08 Usability Testing</a>
+        <a href="reflection.html">09 Reflection</a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Usability <span style="color:var(--accent-pink)">Testing</span></h1>
+            <p class="subtitle">Validating the interface with real-world hardware and accessibility constraints.</p>
+        </header>
+
+        <section class="card">
+            <h2>The <span style="color:var(--accent-orange)">Testing Plan</span></h2>
+            <div class="info-block">
+                <p>To ensure the prototype functions for both high-stress caregivers (Sunita) and senior users (Rajesh), I conducted moderated "Think-Aloud" sessions focusing on the following goals:</p>
+                <ul>
+                    <li><strong>Hardware Compliance:</strong> Ensuring UI elements aren't obscured by modern phone notches.</li>
+                    <li><strong>User Control:</strong> Checking for clear navigation paths and "exit" strategies on all sub-pages.</li>
+                    <li><strong>Confidence:</strong> Validating that senior users feel "safe" when logging critical medicine.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card journey-container">
+            <div class="journey-header">
+                <div>
+                    <h2>Detailed <span style="color:var(--accent-orange)">Findings</span></h2>
+                    <p>Issues identified during Task 01: Profile Switching and Task 02: Medication Logging.</p>
+                </div>
+            </div>
+
+           <div class="persona-layout" style="margin-bottom: 4rem;">
+    <div class="screenshot-container">
+        <img src="page01old.png" alt="Notch Issue" class="iphone-screenshot">
+        <p class="emote panic" style="margin-top: 1rem;">Issue: Hardware Notch</p>
+    </div>
+    <div class="persona-content">
+        <div class="quote-box">
+            "The front camera notch actually covers the Arav button. I had to tap blindly near the top edge to get it to work."
+        </div>
+        <div class="info-block" style="margin-top: 1.5rem;">
+            <h4>Participant Answer</h4>
+            <p>Users struggled to identify who was currently active because the hardware "Black Notch" sat directly over the persona switcher.</p>
+            <h4>Actionable Fix</h4>
+            <p>Lowered the entire top navigation bar by 50px to clear the safe-area margins.</p>
+        </div>
+    </div>
+</div>
+
+          <div class="persona-layout" style="margin-bottom: 4rem;">
+    <div class="screenshot-container" style="background: var(--pastel-orange);">
+        <img src="page02old.png" alt="Back Button Issue" class="iphone-screenshot">
+        <p class="emote anxious" style="margin-top: 1rem;">Issue: Navigation Dead-End</p>
+    </div>
+    <div class="persona-content">
+        <div class="quote-box secondary">
+            "I feel trapped. Once I'm in the Records page, there's no way to go back without restarting the app."
+        </div>
+        <div class="info-block" style="margin-top: 1.5rem;">
+            <h4>Participant Answer</h4>
+            <p>Testers expected a standard iOS "Back" chevron. Without it, they felt anxiety about losing their place in the app.</p>
+            <h4>Actionable Fix</h4>
+            <p>Implemented a global "Back" button on all sub-screens to ensure a clear linear path.</p>
+        </div>
+    </div>
+</div>
+
+          <div class="persona-layout">
+    <div class="screenshot-container" style="background: var(--pastel-pink);">
+        <img src="page03old.png" alt="Undo Button Issue" class="iphone-screenshot">
+        <p class="emote focus" style="margin-top: 1rem;">Issue: Tactile Accessibility</p>
+    </div>
+    <div class="persona-content">
+        <div class="quote-box">
+            "The 'Undo' button is way too small. If I made a mistake logging my insulin, I'd be stressed I couldn't hit it."
+        </div>
+        <div class="info-block" style="margin-top: 1.5rem;">
+            <h4>Participant Answer</h4>
+            <p>Senior participants appreciated the logging confirmation but found the "Safety Net" (Undo) physically difficult to interact with.</p>
+            <h4>Actionable Fix</h4>
+            <p>Enlarged the Undo button to a 48px touch target and added a high-contrast border for visibility.</p>
+        </div>
+    </div>
+</div>
+
+        <section class="card">
+            <h2>Iteration <span style="color:var(--accent-pink)">Summary</span></h2>
+            <div class="matrix-wrapper">
+                <div class="matrix-row row-labels">
+                    <div class="label">Feature</div>
+                    <div class="stage-box">Pain Point</div>
+                    <div class="stage-box">V2 Improvement</div>
+                </div>
+                <div class="matrix-row">
+                    <div class="label">Top Bar</div>
+                    <div class="cell"><p>Interference with hardware Notch.</p></div>
+                    <div class="cell"><p>Lowered placement to "Safe Zone".</p></div>
+                </div>
+                <div class="matrix-row">
+                    <div class="label">Navigation</div>
+                    <div class="cell"><p>Missing "Back" buttons on sub-pages.</p></div>
+                    <div class="cell"><p>Added universal Back chevrons.</p></div>
+                </div>
+                <div class="matrix-row">
+                    <div class="label">Undo Action</div>
+                    <div class="cell"><p>Tiny touch target for senior users.</p></div>
+                    <div class="cell"><p>Enlarged button to 48px height.</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wireframes - Health Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styling for the massive Fresco canvas */
+        .wireframe-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .canvas-container {
+            width: 100%;
+            max-width: 1000px; /* Matches your 'main' width */
+            border: 2px solid var(--border-soft);
+            border-radius: 24px;
+            overflow: hidden; /* Keeps the rounded corners clean */
+            background: white;
+            box-shadow: 0 20px 40px rgba(154, 52, 18, 0.1);
+        }
+
+        .full-canvas {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+        }
+
+        .canvas-footer {
+            margin-top: 1.5rem;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Responsive adjustment to ensure navigation doesn't overlap */
+        @media (max-width: 1200px) {
+            main { margin-left: 260px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>Health Companion</h2>
+        <a href="index.html">01 Introduction</a>
+        <a href="research.html">02 User Research</a>
+        <a href="personas.html">03 Personas</a>
+        <a href="journey.html">04 Journey Maps</a>
+        <a href="flow.html">05 Logic & Flows</a>
+        <a href="design.html" class="active">06 Wireframes</a>
+        <a href="prototype.html">07 Prototype</a>
+        <a href="testing.html">08 Usability Testing</a>
+        <a href="reflection.html">09 Reflection</a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Wireframes</h1>
+            <p class="subtitle">Hand-drawn 8-screen blueprint via Adobe Fresco.</p>
+        </header>
+
+        <section class="wireframe-display">
+            <div class="canvas-container">
+                <img src="MedicalAppWireframe.jpg" alt="Full 8-Screen Wireframe Canvas" class="full-canvas">
+            </div>
+            
+            <div class="canvas-footer">
+                <p>Resolution: 6000 x 6000 px | Tools: Adobe Fresco + Apple Pencil</p>
+                <p>Note: This canvas illustrates the parallel user journeys for Sunita and Rajesh, highlighting the transition into High-Contrast Accessibility Mode.</p>
+            </div>
+        </section>
+
+        <div class="needs-box" style="margin-top: 2rem; border-color: var(--accent-orange); background: var(--pastel-orange);">
+            <h4 style="color: var(--accent-orange);">Design Rationale</h4>
+            <p>The wireframes use a fidelity-balanced approach to focus on Information Architecture and Interaction Logic. Handwritten annotations provide immediate clinical context for medications like Albuterol and Lantus, ensuring the UX story is clear even at a sketch level.</p>
+        </div>
+    </main>
+</body>
+</html>

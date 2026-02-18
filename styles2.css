@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --bg-dark: #fff7ed;
+    --card-bg: #ffffff;
+    --accent-orange: #fb923c;
+    --accent-pink: #f472b6;
+    --text-main: #431407;
+    --text-dim: #9a3412;
+    --pastel-pink: #fdf2f8;
+    --pastel-orange: #fff7ed;
+    --border-soft: #ffedd5;
+}
+
+/* 1. Global Layout & Sidebar (Keeps it consistent with other pages) */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+nav {
+    width: 240px;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    border-right: 1px solid var(--border-soft);
+    padding: 2rem 1rem;
+}
+
+nav h2 { 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.8rem; 
+    text-transform: uppercase; 
+    color: var(--accent-orange); 
+    letter-spacing: 2px;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--text-dim);
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+nav a.active {
+    background: var(--pastel-pink);
+    color: var(--accent-pink);
+    border-left: 4px solid var(--accent-pink);
+}
+
+main {
+    margin-left: 260px;
+    padding: 3rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* 2. Standard Cards & Headers */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-soft);
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 25px -5px rgba(154, 52, 18, 0.05);
+}
+
+h1 { 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3.2rem; 
+    color: var(--accent-orange);
+}
+
+h2 { 
+    font-family: 'Quicksand', sans-serif;
+    color: var(--accent-pink); 
+}
+
+/* 3. The Screenshot Layout (Your Testing Findings) */
+.persona-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* Image on left, text on right */
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: center;
+}
+
+.screenshot-container {
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iphone-screenshot {
+    width: 100%;
+    height: auto; 
+    max-height: 550px;
+    object-fit: contain;
+    border-radius: 35px;
+    border: 8px solid #2d2d2d; /* iPhone Frame */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* 4. Text Blocks & Quotes */
+.quote-box {
+    border-left: 6px solid var(--accent-pink);
+    background: #fff1f2;
+    padding: 1.5rem;
+    border-radius: 0 16px 16px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.quote-box.secondary { 
+    border-color: var(--accent-orange); 
+    background: #fff7ed;
+}
+
+.info-block h4 {
+    color: var(--accent-orange);
+    border-bottom: 2px solid var(--border-soft);
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* 5. The Summary Matrix (Specific to Testing Results) */
+.matrix-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-soft);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.matrix-row {
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr; /* Fixed for Testing Table */
+    border-bottom: 1px solid var(--border-soft);
+    background: white;
+}
+
+.matrix-row.row-labels {
+    background: var(--pastel-orange);
+    font-weight: 700;
+}
+
+.label {
+    padding: 1.5rem 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--accent-pink);
+    border-right: 1px solid var(--border-soft);
+}
+
+.cell, .stage-box {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-right: 1px solid var(--border-soft);
+}
+
+/* Emotes for badges */
+.emote {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.emote.panic { background: #fee2e2; color: #ef4444; }
+.emote.anxious { background: #ffedd5; color: #f97316; }
+.emote.focus { background: #e0f2fe; color: #0ea5e9; }

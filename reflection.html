@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reflection - Health Companion</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <h2>Health Companion</h2>
+        <a href="index.html">01 Introduction</a>
+        <a href="research.html">02 User Research</a>
+        <a href="personas.html">03 Personas</a>
+        <a href="journey.html">04 Journey Maps</a>
+        <a href="flow.html">05 Logic & Flows</a>
+        <a href="design.html">06 Wireframes</a>
+        <a href="prototype.html">07 Prototype</a>
+        <a href="testing.html">08 Usability Testing</a>
+        <a href="reflection.html" class="active">09 Reflection</a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Project <span style="color:var(--accent-pink)">Reflection</span></h1>
+            <p class="subtitle">Lessons learned in accessibility, iteration, and user-centric design.</p>
+        </header>
+
+        <section class="card" style="border-left: 8px solid var(--accent-orange);">
+            <h2>Design <span style="color:var(--accent-orange)">Challenges</span></h2>
+            <div class="info-block">
+                <p>The primary challenge of the <strong>Health Companion</strong> project was balancing two polar opposite user needs within a single design system:</p>
+                <ul>
+                    <li><strong>The Caregiver (Sunita):</strong> Needed high-density information, rapid biometric entry (FaceID), and quick-access emergency records.</li>
+                    <li><strong>The Senior (Rajesh):</strong> Needed extreme simplicity, high-contrast visuals, and "error-proof" tactile interactions.</li>
+                </ul>
+<p>Initially, my designs felt too "clinical" and heavy. The <strong>UX Research phase</strong> was critical here; it helped me move beyond my own assumptions and realize that medical apps don't have to look intimidating. By following an <strong>iterative design process</strong>, I was able to pivot to a "Warm Sunset" palette, transforming the app into a supportive lifestyle tool rather than just a digital medical form.</p>            </div>
+        </section>
+
+        <section class="card journey-container">
+            <div class="journey-header">
+                <div>
+                    <h2>Key <span style="color:var(--accent-pink)">Takeaways</span></h2>
+                    <p>Three core principles that shaped the final prototype.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout" style="margin-bottom: 3rem;">
+                <div class="quote-box">
+                    <h4 style="margin-top:0">01. Accessibility is not Optional</h4>
+                    <p>Testing with the <strong>Rajesh</strong> persona taught me that button size is a functional requirement, not a visual preference. Increasing touch targets and adding the 3-second hold changed the app from frustrating to reliable.</p>
+                </div>
+                <div class="quote-box secondary">
+                    <h4 style="margin-top:0">02. Respect the Hardware</h4>
+                    <p>Designing in Figma is different from using a real phone. Realizing that the <strong>iPhone Notch</strong> blocked my navigation was a epiphany that forced me to understand Safe Area margins in UI development.</p>
+                </div>
+            </div>
+
+            <div class="quote-box" style="border-color: var(--accent-orange); background: #fffcf9;">
+                <h4 style="margin-top:0">03. The Power of Feedback</h4>
+                <p>User testing revealed "dead-ends" in my navigation. Adding simple back-buttons seems obvious now, but it was the most requested fix from my participants. It taught me that as a designer, I am often too close to the project to see simple flaws.</p>
+            </div>
+        </section>
+
+    
+      
+
+    </main>
+</body>
+</html>

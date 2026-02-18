@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Personas - Health Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>Report Index</h2>
+        <a href="index.html">01 Introduction</a>
+        <a href="research.html">02 User Research</a>
+        <a href="personas.html" class="active">03 Personas</a>
+        <a href="journey.html">04 Journey Maps</a>
+        <a href="flow.html">05 Logic & Flows</a>
+        <a href="design.html">06 Wireframes</a>
+        <a href="prototype.html">07 Prototype</a>
+        <a href="testing.html">08 Usability Testing</a>
+        <a href="reflection.html">09 Reflection</a>
+    </nav>
+
+    <main>
+        <header>
+            <span class="badge">Target Audience</span>
+            <h1>User <span style="color:var(--medical-blue)">Personas</span></h1>
+            <p class="subtitle">Deep-dive into the behaviors and needs of our primary users.</p>
+        </header>
+
+        <section class="persona-layout card">
+            <div class="persona-sidebar">
+                <img src="sunita.jpeg" alt="Sunita" class="persona-img">
+                <div class="persona-stat">
+                    <span>NAME</span>
+                    <strong>Sunita</strong>
+                </div>
+                <div class="persona-stat">
+                    <span>AGE</span>
+                    <strong>45</strong>
+                </div>
+                <div class="persona-stat">
+                    <span>TECH LEVEL</span>
+                    <div class="bar"><div class="fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="persona-stat">
+                    <span>OCCUPATION</span>
+                    <p>Senior Software Engineer</p>
+                </div>
+            </div>
+
+            <div class="persona-content">
+                <div class="quote-box">
+                    <p>"I’ve only got a few minutes between meetings—if the app can't show me everyone's status in one click, it's useless to me."</p>
+                </div>
+
+                <h3>Background</h3>
+                <p>Sunita is part of the "sandwich generation," managing her own thyroid condition while acting as the primary health administrator for her asthmatic son and aging father. She works in a high-pressure tech role where her day is dictated by tight delivery deadlines.</p>
+
+                <div class="grid-2">
+                    <div class="info-block">
+                        <h4>Goals</h4>
+                        <ul>
+                            <li>Unified household management overview.</li>
+                            <li>Rapid info retrieval during school emergencies.</li>
+                            <li>Sync medical tasks with work calendars.</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h4>Challenges</h4>
+                        <ul>
+                            <li>Mental drain from context switching.</li>
+                            <li>Portal fatigue across different providers.</li>
+                            <li>Zero tolerance for complex onboarding.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="needs-box">
+                    <h4>Core Needs</h4>
+                    <p><strong>One-Tap Profile Switcher:</strong> A prominent toggle for "Sunita," "Son," and "Father."</p>
+                    <p><strong>Shared Access:</strong> Real-time status sharing with her husband and school nurse.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="persona-layout card">
+            <div class="persona-sidebar">
+                <img src="rajesh.jpeg" alt="Rajesh" class="persona-img">
+                <div class="persona-stat">
+                    <span>NAME</span>
+                    <strong>Rajesh</strong>
+                </div>
+                <div class="persona-stat">
+                    <span>AGE</span>
+                    <strong>68</strong>
+                </div>
+                <div class="persona-stat">
+                    <span>TECH LEVEL</span>
+                    <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+                </div>
+                <div class="persona-stat">
+                    <span>OCCUPATION</span>
+                    <p>Retired Civil Servant</p>
+                </div>
+            </div>
+
+            <div class="persona-content">
+                <div class="quote-box secondary">
+                    <p>"I don't want to bother my daughter for every pill. I just need buttons big enough to see and hit without my glasses."</p>
+                </div>
+
+                <h3>Background</h3>
+                <p>A retired professional living with Type 2 Diabetes and Osteoarthritis. While tech-literate for basic tasks, he is terrified of "breaking the app" and struggles with the tiny buttons and thin fonts common in modern minimalist design.</p>
+
+                <div class="grid-2">
+                    <div class="info-block">
+                        <h4>Goals</h4>
+                        <ul>
+                            <li>Maintain medical independence.</li>
+                            <li>Fail-safe dose confirmation system.</li>
+                            <li>Simple symptom updates to his doctor.</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h4>Challenges</h4>
+                        <ul>
+                            <li>Arthritis makes small touch targets impossible.</li>
+                            <li>Declining vision makes low contrast unreadable.</li>
+                            <li>Anxiety over data loss or "wrong clicks."</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="needs-box">
+                    <h4>Core Needs</h4>
+                    <p><strong>High-Contrast Focus Mode:</strong> Bold dark backgrounds with mint/blue text.</p>
+                    <p><strong>Giant Action Buttons:</strong> Elements at least 60px tall for stiff fingers.</p>
+                    <p><strong>Voice Input:</strong> Record quick symptom notes instead of typing.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

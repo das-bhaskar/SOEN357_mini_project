@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High-Fidelity Prototype - Health Companion</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <h2>Health Companion</h2>
+        <a href="index.html">01 Introduction</a>
+        <a href="research.html">02 User Research</a>
+        <a href="personas.html">03 Personas</a>
+        <a href="journey.html">04 Journey Maps</a>
+        <a href="flow.html">05 Logic & Flows</a>
+        <a href="design.html">06 Wireframes</a>
+        <a href="prototype.html" class="active">07 Prototype</a>
+        <a href="testing.html">08 Usability Testing</a>
+        <a href="reflection.html">09 Reflection</a>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Final <span style="color:var(--accent-pink)">Prototype</span></h1>
+            <p class="subtitle">The refined, interactive 8-screen solution for Sunita and Rajesh.</p>
+        </header>
+
+        
+
+        <section class="card" style="border-left: 8px solid var(--accent-orange);">
+
+            <div class="needs-box" style="margin-bottom: 3rem; background: var(--pastel-pink); border: 2px solid var(--accent-pink);">
+            <h4 style="color: var(--accent-pink); margin-bottom: 0.5rem;">✨ Final Iteration</h4>
+            <p>The screens displayed below represent the <strong>Final Design (Iteration 2)</strong>, refined after user feedback. I have prioritized accessibility, thumb-zone reachability, and hardware compatibility.</p>
+            <hr style="border: 0; border-top: 1px solid var(--border-soft); margin: 1rem 0;">
+            <p style="font-size: 0.9rem;">
+                Original iteration can be found here: 
+                <a href="testing.html" style="color: var(--accent-pink); font-weight: 700; text-decoration: underline;">
+                    View Initial Iterations & Usability Test Results →
+                </a>
+            </p>
+        </div>
+          <section class="card" style="border-left: 8px solid var(--accent-orange);">
+            <h2>Interactive <span style="color:var(--accent-orange)">Experience</span></h2>
+            <p>For the full experience with transitions and the <strong>3-second logging hold</strong>, you can interact with the live embed below or launch it in a new window.</p>
+            
+            <div style="margin: 2rem 0; display: flex; justify-content: center;">
+                <iframe 
+                    style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" 
+                    width="100%" 
+                    height="600" 
+                    src="https://embed.figma.com/proto/miAp6l8qF7ufOoN33PwomB/soen357miniprojectbhaskardas?node-id=1-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="https://www.figma.com/proto/miAp6l8qF7ufOoN33PwomB/soen357miniprojectbhaskardas?node-id=1-2&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" 
+                   target="_blank" 
+                   class="emote focus" 
+                   style="display: inline-block; text-decoration: none; padding: 15px 30px; font-size: 1rem;">
+                    Open Full-Screen Demo
+                </a>
+            </div>
+            
+            <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-dim); text-align: center;">
+                <em>Note: Detailed user feedback and initial design iterations are documented in <strong>Section 08: Usability Testing</strong>.</em>
+            </p>
+        </section>
+        </section>
+
+        <section class="card journey-container">
+            <div class="journey-header">
+                <div>
+                    <h2>System <span style="color:var(--accent-pink)">Walkthrough</span></h2>
+                    <p>Documenting the final interface design and functional improvements.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container">
+                    <img src="page1.png" alt="Login Screen" class="iphone-screenshot">
+                    <p class="emote calm">01 Login Gateway</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Biometric Access</h4>
+                    <p>Features a custom FaceID icon and an audio-visual scanner bar. The layout has been lowered to ensure visibility beneath the hardware notch.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container" style="background: var(--pastel-orange);">
+                    <img src="page2.png" alt="Dashboard" class="iphone-screenshot">
+                    <p class="emote focus">02 Family Dashboard</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Centralized Household Care</h4>
+                    <p>Displays a prioritized "Up Next" list for all family members. Uses floating white cards with soft shadows to create depth and hierarchy.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container">
+                    <img src="page3.png" alt="Arav Page" class="iphone-screenshot">
+                    <p class="emote calm">03 Dependent View</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Arav's Medication Schedule</h4>
+                    <p>Timeline-based view of doses. "Log Now" buttons are high-contrast orange to stand out from the peach background.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container" style="background: var(--pastel-orange);">
+                    <img src="page4.png" alt="Records" class="iphone-screenshot">
+                    <p class="emote focus">04 Medical Vault</p>
+                </div>
+                <div class="persona-content">
+                    <h4>The Records Hub</h4>
+                    <p>Tiled navigation for emergency plans and insurance. Features a prominent "Scan Documents" floating action button (FAB) for rapid data entry.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container">
+                    <img src="page5.png" alt="Rajesh Personal" class="iphone-screenshot">
+                    <p class="emote calm">05 Senior Dashboard</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Assisted Independence</h4>
+                    <p>A simplified version of the dashboard for Rajesh, focusing on large text and a direct "Call Sunita" button for immediate safety.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container" style="background: var(--pastel-orange);">
+                    <img src="page6.png" alt="Confirmation" class="iphone-screenshot">
+                    <p class="emote anxious">06 Tactile Logger</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Intentional Interaction</h4>
+                    <p>The 3-second "Press and Hold" circle prevents accidental logging. Includes the new "Back" button for improved navigation control.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container">
+                    <img src="page7.png" alt="Logged" class="iphone-screenshot">
+                    <p class="emote calm">07 Success State</p>
+                </div>
+                <div class="persona-content">
+                    <h4>Peace of Mind</h4>
+                    <p>High-visibility green success screen. Features the enlarged 48px "Undo" button and a notification avatar showing Sunita has been alerted.</p>
+                </div>
+            </div>
+
+            <div class="persona-layout">
+                <div class="screenshot-container" style="background: var(--pastel-orange);">
+                    <img src="page8.png" alt="Emergency" class="iphone-screenshot">
+                    <p class="emote panic">08 Crisis Hub</p>
+                </div>
+                <div class="persona-content">
+                    <h4>The Emergency Plan</h4>
+                    <p>A high-stress UI designed for speed. Includes dosage quantities, rescue instructions, and a "Share Plan" feature for ER staff.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
